@@ -9,11 +9,9 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Viktorija-Gulb/pr_02/issues"
-  },
-  "homepage": "https://github.com/Viktorija-Gulb/pr_02#readme",
+  "homepage": "https://viktorija-gulb.github.io/pr_02",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   },
   "devDependencies": {
@@ -28,6 +26,7 @@
     "lint-js": "eslint build/js/**",
     "format": "prettier --write js/**",
     "dev": "npm run sass && npm run lint-css && npm lint-js && npm run format",
-    "prod": "node-sass scss/ -o build/css/ --output-style compressed"
+    "prod": "node-sass scss/ -o build/css/ --output-style compressed",
+    "deploy": "gh-pages -d dist"
   }
 }
