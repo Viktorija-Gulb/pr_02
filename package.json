@@ -27,6 +27,7 @@
     "lint-css": "stylelint 'sass/*.scss'",
     "lint-js": "eslint build/js/**",
     "format": "prettier --write js/**",
-    "dev": "npm run sass && npm run lint-css && npm lint-js && npm run format"
+    "dev": "npm run sass && npm run lint-css && npm lint-js && npm run format",
+    "prod": "node-sass scss/ -o build/css/ --output-style compressed"
   }
 }
