@@ -27,6 +27,6 @@
     "format": "prettier --write js/**",
     "dev": "npm run sass && npm run lint-css && npm lint-js && npm run format",
     "prod": "node-sass scss/ -o build/css/ --output-style compressed",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   }
 }
